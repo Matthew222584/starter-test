@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #6495ED;
+    background-color: gray
 }
 
 p {
@@ -10,7 +10,7 @@ p {
 
 a {
     font-weight: 400;
-    color: purple;
+    color: black;
     font-size: 15px;
     text-decoration: underline;
 }
