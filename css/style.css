@@ -1,22 +1,60 @@
+
+
+body {
+    background-color: #6495ED;
+}
+
+p {
+    padding: 10px;
+}
+
+a {
+    font-weight: 400;
+    color: purple;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 20px;
+}
+
 li {
     display: inline-block;
     height: 30px;
-    color: blue;
+    color: gold;
     margin-right: 30px;
-}
-/* jjj */
-ul {
     text-decoration: none;
+    padding: 10px;
+}
+
+div {
+    padding: 5px;
 }
 
 ul.grid-list {
     grid-template-columns: repeat(3, 1fr);
+    text-decoration: none;
+    text-align: center;
+}
+  
+ul.poop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 
-
-li:hover {
-    background-color: orange
+ul.poop li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
+
 
 nav li {
     list-style-type: none;
@@ -35,51 +73,108 @@ nav li {
 
 
 .gridstuff img, video {
-    border: 3px solid gold;
+    border: 3px solid blue;
     border-radius: 5px;
-    padding: 3px;
+    padding: 10px;
 }
 
 .gridstuff {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .container {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto;
 }
 
 .overview {
-    color: blue;
+    color: gold;
     grid-column: 1/-1;
-    flex: 1;
-    min-height: 200px;
-    background-image: url("../images/header.jpeg");
-    width: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
 }
 
-.about-image { 
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
-    overflow: hidden;
+.about {
+    align-items: center;
 }
 
-.about { 
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+.about-image img {
+    max-height: 100%;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    margin: auto;
 }
 
-@media screen and (max-width: 600px) {
+img, video {
+    width: 70%;
+}
 
-    .skip {
-      display: none;
+ul.recipes li:hover {
+    color: transparent;
+}
+
+h3 {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(18, 23, 67);
+}
+
+h2 {
+    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-right: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.current {
+    background-color: gold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 25px;
+}
+
+
+#skip {
+    display: none;
+}
+
+ul.grid-list {
+    font-size: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1 {
+        animation-name: example;
+        animation-duration: 4s;
     }
+    img[src$=".gif"] {
+        display: none; /*Used Chat GPT for these 3 lines*/
+    }
+}
+
+@keyframes example {
+from {background-color: green;}
+to {background-color: #6495ED;;}
+}
+
+@media only screen and (min-width: 600px) {
 
 
-  }
+}
