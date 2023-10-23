@@ -175,6 +175,8 @@ to {background-color: #6495ED;;}
 }
 
 @media only screen and (min-width: 600px) {
-
+    #skip {
+        display: contents;
+    }
 
 }
