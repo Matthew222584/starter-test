@@ -10,17 +10,30 @@
     <body>
         <header>
             <nav>
-                <ul class="grid-list">
-                    <li><a href="index.html">Home/Pets</a></li>
-                    <li><a href="recipes.html" class="current">Recipes</a></li>
-                    <li><a href="travel.html">Travel</a></li>
-                </ul>
+                <div class="hamburger">
+                    <span class="navigationbar">&#9776;</span> 
+                    <ul class="grid-list">
+                        <li><a href="index.html">Home/Pets</a></li>
+                        <li><a href="recipes.html" class="current">Recipes</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                    </ul>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const menu = document.querySelector(".navigationbar");
+                        const grid = document.querySelector(".hamburger .grid-list");
+                    
+                        menu.addEventListener("click", function () {
+                            grid.classList.toggle("show-dropdown");
+                        });
+                    });
+                </script>
             </nav>
         </header>
         <div class="overview">
             <h1>Recipes</h1>
         </div>
-        <a href = "#main" id="skip">Skip to Main Content</a>
+        <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
         <main class="container" id="main">
             <div>
                 <h2>Dead Simple Fried Rice</h2>
