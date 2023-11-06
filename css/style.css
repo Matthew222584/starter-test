@@ -80,7 +80,7 @@ nav li {
 
 .gridstuff {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -238,17 +238,20 @@ to {background-color: #6495ED;}
         padding: 40px;
     }
 
-    @keyframes spin {
-        0% {
-            transform: rotateY(0deg);
+
+    @media (prefers-reduced-motion: reduce) {
+        @keyframes spin {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
         }
-        100% {
-            transform: rotateY(360deg);
+        
+        img:hover {
+            animation: spin 5s linear;
         }
-    }
-    
-    img:hover, video:hover {
-        animation: spin 5s linear;
     }
     
 }
