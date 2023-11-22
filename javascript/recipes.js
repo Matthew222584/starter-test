@@ -6,3 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         grid.classList.toggle("show-dropdown");
     });
 });
+
+function copyFunction () {
+    alert('Text copied successfully!');
+}
