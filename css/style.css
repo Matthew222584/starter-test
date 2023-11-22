@@ -373,3 +373,7 @@ img:hover, video:hover {
         display: none;
     }
 }
+
+body {
+    font-family: 'Trirong';
+}
