@@ -3,12 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo-travel.jpeg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Travel</title>
     </head>
     <body>
         <header>
+            <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
             <nav>
                 <div class="hamburger">
                     <span class="navigationbar">&#9776;</span> 
@@ -18,31 +21,19 @@
                         <li><a href="travel.html" class="current">Travel</a></li>
                     </ul>
                 </div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const menu = document.querySelector(".navigationbar");
-                        const grid = document.querySelector(".hamburger .grid-list");
-                    
-                        menu.addEventListener("click", function () {
-                            grid.classList.toggle("show-dropdown");
-                        });
-                    });
-                </script>
             </nav>
         </header>
         <div class="overview">
             <h1>Travel</h1>
         </div>
-        <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
-
         <main class="container" id="main">
         <div>
             <h2>Zion National Park</h2>
 
             <div class="about">
                 <div class="about-image">
-                    <img src="images/Zion_River.jpg" alt="Zion River Still" width="400" height="400">
-                    <img src="images/Zion_River.gif" alt="Zion River Moving" width="400" height="400">
+                    <img src="images/Zion_River.jpg" id="static" alt="Zion River Still" width="400" height="400">
+                    <img src="images/Zion_River.gif" id="moving" alt="Zion River Moving" width="400" height="400">
                 </div>
                 <div class="text-box">
                     <p>
@@ -89,8 +80,8 @@
 
             <div class="about">
                 <div class="about-image">
-                    <img src="images/Sofia_Bulgaria.gif" alt="Sofia Bulgaria GIF" width="400" height="400">
-                    <img src="images/Sofia_Bulgaria.png" alt="Sofia Bulgaria PNG" width="400" height="400">
+                    <img src="images/Sofia_Bulgaria.gif" id="moving" alt="Sofia Bulgaria GIF" width="400" height="400">
+                    <img src="images/Sofia_Bulgaria.png" id="static" alt="Sofia Bulgaria PNG" width="400" height="400">
                 </div>
                 <div class="text-box">
                     <p>Sofia is the capital city of Bulgaria, a country located in Eastern Europe. It is part of the European Union and the primary language spoken is Bulgarian. The city’s population is around 1.3 million. In addition to its urban structures, Sofia also contains a mountain peak called “Vitosha”.</p>
@@ -134,8 +125,8 @@
 
             <div class="about">
                 <div class="about-image">
-                    <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron still.">
-                    <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
+                    <img src="images/yellowstone_cauldron.gif" id="moving" width="400" alt="Bubbling cauldron still.">
+                    <img src="images/yellowstone_cauldron.jpg" id="static" width = "400" alt="Bubbling cauldron">
                 </div>
                 <div class="text-box">
                     <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
@@ -188,8 +179,8 @@
 
             <div class="about">
                 <div class="about-image">
-                    <img src="images/grand_canyon.gif" width="400" alt="Grand Canyon still">
-                    <img src="images/grand_canyon.jpg" width = "400" alt="Grand Canyon">
+                    <img src="images/grand_canyon.gif" id="moving" width="400" alt="Grand Canyon still">
+                    <img src="images/grand_canyon.jpg" id="static" width = "400" alt="Grand Canyon">
                 </div>
                 <div class="text-box">
                     <p>The Grand Canyon is a natural geological formation located in the state of Arizona. It is a steep-sided canyon carved by the Colorado River over millions of years. The canyon is known for its size, vibrant and varied colors, and intricate rock formations. It is one of the most famous and visited natural landmarks in the United States and around the world.</p>
@@ -236,8 +227,8 @@
 
             <div class="about">
                 <div class="about-image">
-                    <img src="images/ebenalp_sunrise.gif" width="400" alt="Mountain still">
-                    <img src="images/ebenalp_seealpsee_lake.jpeg" width = "400" alt="Mountain">
+                    <img src="images/ebenalp_sunrise.gif" id="moving" width="400" alt="Mountain still">
+                    <img src="images/ebenalp_seealpsee_lake.jpeg" id="static" width = "400" alt="Mountain">
                 </div>
                 <div class="text-box">
                     <p>Ebenalp Mountain graces Switzerland's Appenzell Alps with rugged beauty. Hikers explore well-marked trails, and at the peak, the iconic Ebenalp Cliff offers panoramic views. Thrill-seekers can paraglide from its heights, while the mountaintop Berggasthaus Schäfler provides a unique stay immersed in alpine charm. For a memorable dining experience, the side-of-the-mountain Aescher Restaurant offers local cuisine amidst stunning vistas. Ebenalp Mountain is a breathtaking destination that blends natural splendor with exciting activities and culinary delights, catering to adventurous spirits.</p>
@@ -277,5 +268,6 @@
             <!-- Elijah Cantu -->
         </div>
     </main>
+    <script src="javascript/travel.js"></script>
 </body>
 </html>

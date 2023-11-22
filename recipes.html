@@ -3,12 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo-recipes.jpeg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Recipes</title>
     </head>
     <body>
         <header>
+            <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
             <nav>
                 <div class="hamburger">
                     <span class="navigationbar">&#9776;</span> 
@@ -18,22 +21,11 @@
                         <li><a href="travel.html">Travel</a></li>
                     </ul>
                 </div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const menu = document.querySelector(".navigationbar");
-                        const grid = document.querySelector(".hamburger .grid-list");
-                    
-                        menu.addEventListener("click", function () {
-                            grid.classList.toggle("show-dropdown");
-                        });
-                    });
-                </script>
             </nav>
         </header>
         <div class="overview">
             <h1>Recipes</h1>
         </div>
-        <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
         <main class="container" id="main">
             <div>
                 <h2>Dead Simple Fried Rice</h2>
@@ -300,5 +292,6 @@
             </div>
  
         </main>
+        <script src="javascript/recipes.js"></script>
     </body>
 </html>
